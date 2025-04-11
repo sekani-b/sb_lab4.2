@@ -2,20 +2,57 @@
 
 html {
     margin: 25px;
-    background-color: lightblue;
+    background-color: rgba(255, 255, 255, 0.658);
     font-family: verdana;
     font-size: 20px;
 }
 
+.navbar{
+    background-color: transparent;
+    padding: 20px;
+    justify-content: center;
+}
+
+.content{
+    padding-top: 0px;
+    font-size: 50px;
+}
 h3 {
     margin-top: 20px;
-    background-color: lightblue;
+    padding: 10px;
+    background-color: transparent;
     font-size: 30px;
     font-weight: bolder;
+    text-align: center;
 }
 
 p {
     margin-top: 10px;
     margin-left: 15px;
-    background-color: lightblue;
+    background-color: transparent;
+    font-size: 25px;
+    text-align: center;
+}
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+ul li{
+    font-size: 30px;
+}
+
+footer{
+    margin-top: 10px;
+    max-height: 0px;
+}
+button{
+    /* color: black; */
+    background-color: lightblue
+}
+button:hover{
+    color: white;
+    background-color: rgba(230, 230, 230, 0.219);
 }

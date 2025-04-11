@@ -10,27 +10,42 @@
 
 <body>
     <!-- The below tag is using Bulma CSS. Try replacing line 14 with line 13. -->
-    <!-- <div class="has-text-success-dark is-size-4  has-text-weight-medium"> -->
-    <div>
-        <a href="{{ url_for('home') }}">
-            Home
-        </a>
-        &nbsp;&nbsp;
-        <a href="{{ url_for('all_pages') }}">
-            Pages
-        </a>
-        &nbsp;&nbsp;
-        <a href="{{ url_for('about') }}">
-            About
-        </a>
-    </div>
+    <nav class="navbar">
+        <div class="has-text-success-dark is-size-4  has-text-weight-medium">
 
-    <!-- The below tag is using Bulma CSS. Try replacing line 30 with line 29. -->
-    <!-- <div class="content"> -->
-    <div>
-        {% block content %}{{ page_content }}{% endblock %}
-    </div>
+        <!-- <div> -->
+            <a href="{{ url_for('home') }}">
+                Home
+            </a>
+            &nbsp;&nbsp;
+            <a href="{{ url_for('all_pages') }}">
+                Pages
+            </a>
+            &nbsp;&nbsp;
+            <a href="{{ url_for('about') }}">
+                About
+            </a>
+        </div>
+    </nav>
+
+    <div></div>
+    <section class="hero">
+        <div class="content">
+          <!-- <p class="title">Info hero</p>
+          <p class="subtitle">Info subtitle</p> -->
+          <h3>{% block content %}{{ page_content }}{% endblock %}</h3>
+        </div>
+    </section>
+
+   
 
 </body>
+<footer class="footer">
+    <div class="content has-text-centered">
+      <button class="button is-secondary">
+        UX Content by Sekani Burke. <strong>Thank you for visiting!</strong>
+      </button>
+    </div>
+</footer>
 
 </html>
